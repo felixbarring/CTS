@@ -1,0 +1,46 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Maven #
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+release.properties
+
+# NetBeans #
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# UML modeller #
+
+CTS-Model/
+
+# Eclipse #
+
+*.prefs
+.classpath
+.project
+.settings/
+bin/
+
+# LaTeX build files #
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.aux
+*.toc
+*.blg
+*.bak
+*.bbl
