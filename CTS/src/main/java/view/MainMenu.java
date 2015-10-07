@@ -2,8 +2,6 @@
 /*
  * The MIT License
  *
- * Copyright 2014 Gustaf Ringius <Gustaf@linux.com>.
- *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -39,12 +37,9 @@ import java.util.List;
 import controller.SoundController;
 
 /**
+ * This class is the main logical unit of the Main Menu
+ * It combines and controls a big number of various GUI elements needed to make everything come togheter. 
  * @author Felix Bärring <felixbarring@gmail.com>
- */
-
-/*
-	This class is the main logical unit of the Main Menu
-	It combines and controls a big number of various GUI elements needed to make everything come togheter. 
  */
 
 public class MainMenu implements IFViewMode, IFButtonListener, IFDrawTickAndInput {
@@ -221,7 +216,7 @@ public class MainMenu implements IFViewMode, IFButtonListener, IFDrawTickAndInpu
 		drawAndTickList.add(aboutPanel);
 
 		RelativeLocation lal4[] = {new TextArea(
-				new LinkedList<String>(Arrays.asList("If you need help you better send a mail to felixbarring@gmail.com")),
+				new LinkedList<String>(Arrays.asList("If you need help you better send a mail to felixbarring@gmail.com or lofman.andreas@gmail.com")),
 				(int)PANEL_HIDDEN_X, (int)PANEL_HIDDEN_Y, 10, 30, PANEL_WIDTH-20, PANEL_HEIGHT-40)};
 
 		helpPanel = new Panel(PANEL_HIDDEN_X, PANEL_HIDDEN_Y, PANEL_WIDTH, PANEL_HEIGHT, "Help", lal4);

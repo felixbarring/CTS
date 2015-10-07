@@ -1,9 +1,6 @@
 /*
 * The MIT License
 *
-* Copyright 2014 Gustaf Ringius <Gustaf@linux.com>, Felix Bärring <felixbarring@gmail.com>
-* Andreas Löfman <lofman.andreas@gmail.com>,  Robert Wennergren <whoisregor@gmail.com>
-*
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
 * in the Software without restriction, including without limitation the rights
@@ -45,9 +42,9 @@ public class SoundController {
     private final List<ISound> sounds = new ArrayList<>();
     
     private SoundController(){
-//        sounds.add(Sound.newInstance("sweet.wav"));
-//        sounds.add(Sound.newInstance("afterburner.wav"));
-//        sounds.add(Sound.newInstance("button.wav"));
+        sounds.add(Sound.newInstance("sweet.wav"));
+        sounds.add(Sound.newInstance("afterburner.wav"));
+        sounds.add(Sound.newInstance("button.wav"));
     }
     
     public static SoundController getInstance(){
@@ -55,43 +52,43 @@ public class SoundController {
     }
     
     public void startMenuMusic(){
-        //sounds.get(0).loopSound();
+        sounds.get(0).loopSound();
     }
     
     public void startSimulationMusic(){
-        //sounds.get(1).loopSound();
+        sounds.get(1).loopSound();
     }
     
     public void stopMenuMusic(){
-        //sounds.get(0).stopSound();
+        sounds.get(0).stopSound();
     }
     
     public void stopSimulationMusic(){
-        //sounds.get(1).stopSound();
+        sounds.get(1).stopSound();
     }
     
     public void pauseSimulationMusic(){
-        //sounds.get(1).pauseSound();
+        sounds.get(1).pauseSound();
     }
     
     public void playButtonSound(){
-        //sounds.get(2).playSound();
+        sounds.get(2).playSound();
     }
     /**
      * This mutes all the sounds in the application and 
      * unmutes if already muted.
      */
     public void muteAll(){
-//        for (ISound s : sounds){
-//            s.mute();
-//        }
+        for (ISound s : sounds){
+            s.mute();
+        }
     }
     /**
      * This mutes the music in the application and 
      * unmutes the music if already muted.
      */
     public void muteMusic(){
-//        sounds.get(0).mute();
-//        sounds.get(1).mute();
+        sounds.get(0).mute();
+        sounds.get(1).mute();
     }
 }

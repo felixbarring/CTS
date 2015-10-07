@@ -2,8 +2,6 @@
 /*
  * The MIT License
  *
- * Copyright 2014 Gustaf Ringius <Gustaf@linux.com>.
- *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -23,19 +21,17 @@
  * THE SOFTWARE.
  */
 
-/**
- * @author Felix Bärring <felixbarring@gmail.com>
- */
+
 
 package view;
 
 import java.util.List;
 
-/*
-	This class creates a number of buttons that it will manage.
-	Duties include: Sending mouse information, telling them to draw themselves, changing location  
-*/
-
+/**
+ * This class creates a number of buttons that it will manage.
+ * Duties include: Sending mouse information, telling them to draw themselves, changing location  
+ * @author Felix Bärring <felixbarring@gmail.com>
+ */
 public class ButtonContainer extends TargetMoveItem {
 
 	public enum ButtonContainerType{

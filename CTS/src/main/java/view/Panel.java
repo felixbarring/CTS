@@ -2,8 +2,6 @@
 /*
  * The MIT License
  *
- * Copyright 2014 Gustaf Ringius <Gustaf@linux.com>.
- *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -34,11 +32,12 @@ package view;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
-/*
-	A Panel that can contain different GUI items that it will display.
-	The class is responsible to manage the items it contains, like for instance moving them around.
-*/
-
+/**
+ * A Panel that can contain different GUI items that it will display.
+ * The class is responsible to manage the items it contains, like for instance moving them around.
+ * @author Felix Bärring <felixbarring@gmail.com>
+ *
+ */
 public class Panel extends TargetMoveItem implements IFDrawTickAndInput{
 
 	int WIDTH;

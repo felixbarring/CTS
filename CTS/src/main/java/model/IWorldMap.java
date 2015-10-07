@@ -1,9 +1,6 @@
 /*
 * The MIT License
 *
-* Copyright 2014 Gustaf Ringius <Gustaf@linux.com>, Felix Bärring <felixbarring@gmail.com>
-* Andreas Löfman <lofman.andreas@gmail.com>,  Robert Wennergren <whoisregor@gmail.com>
-*
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
 * in the Software without restriction, including without limitation the rights
@@ -40,14 +37,14 @@ public interface IWorldMap {
      * 
      * @return an array with Drawable objects
      */
-    public IDrawable[] getGraphics();
+    IDrawable[] getGraphics();
     
     /**
      * To be called each tick
      *
      * @return returns false if error
      */
-    public boolean think();
+    boolean think();
     
     /**
      * Finds the best route over the map from a
@@ -58,44 +55,44 @@ public interface IWorldMap {
      * @return the best route to between from and to. If there is
      *                  no route available then null will be returned.
      */
-    public Path<INode> findRoute(INode from, INode to);
+    Path<INode> findRoute(INode from, INode to);
     
     /**
      * Removes everything from the Map into the initial state.
      */
-    public void clearMap();
+    void clearMap();
     
     /**
      * Updates the delay the between each car spawn.
      * 
      * @param delay represented as an integer.
      */
-    public void updateSpawnDelay(int delay);
+    void updateSpawnDelay(int delay);
     /**
      * 
      * @return 
      */
-    public boolean saveToFile();
+    boolean saveToFile();
     /**
      * 
      * @param time 
      */
-    public void setTimeOfDay(int time);
+    void setTimeOfDay(int time);
     /**
      * 
      * @param current 
      */
-    public void setWeather(Weather current);
+    void setWeather(Weather current);
     /**
      * 
      * @return 
      */
-    public int getTimeOfDay();
+    int getTimeOfDay();
     /**
      * 
      * @return 
      */
-    public Weather getWeather();
+    Weather getWeather();
     /**
      * 
      * @param w width of the generated map
@@ -105,15 +102,15 @@ public interface IWorldMap {
      * @param passes number of times to iterate through the map and add nodes
      * @return 
      */
-    public boolean generate(int w, int h, int density, int maxLength, int passes);
+    boolean generate(int w, int h, int density, int maxLength, int passes);
     
     /**
      * 
      */
-    public void setLightsYellow();
+    void setLightsYellow();
     
     /**
      * 
      */
-    public void removeYellowLights();
+    void removeYellowLights();
 }

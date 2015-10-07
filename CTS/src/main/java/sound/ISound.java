@@ -1,9 +1,6 @@
 /*
 * The MIT License
 *
-* Copyright 2014 Gustaf Ringius <Gustaf@linux.com>, Felix Bärring <felixbarring@gmail.com>
-* Andreas Löfman <lofman.andreas@gmail.com>,  Robert Wennergren <whoisregor@gmail.com>
-*
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
 * in the Software without restriction, including without limitation the rights
@@ -39,7 +36,7 @@ public interface ISound {
      * which makes this throw exception if a too high or low value
      * was used.
      */
-    public void raiseVolume();
+     void raiseVolume();
     
     /**
      * Decreases the volume of the Sound.
@@ -47,18 +44,18 @@ public interface ISound {
      * which makes this throw exception if a too high or low value
      * was used.
      */
-    public void lowerVolume();
+     void lowerVolume();
     
     /**
      * Method used to mute and also unmute the sound.
      */
-    public void mute();
-    public void playSound();
-    public void loopSound();
-    public void stopSound();
-    public void pauseSound();
-    public boolean isPlaying();
-    public boolean isLooping();
-    public Type[] supportedFileTypes();
+     void mute();
+     void playSound();
+     void loopSound();
+     void stopSound();
+     void pauseSound();
+     boolean isPlaying();
+     boolean isLooping();
+     Type[] supportedFileTypes();
     
 }

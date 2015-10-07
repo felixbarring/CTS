@@ -2,8 +2,6 @@
 /*
  * The MIT License
  *
- * Copyright 2014 Gustaf Ringius <Gustaf@linux.com>.
- *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -32,10 +30,10 @@ package view;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
-/*
-	Just a class that handles the graphical representation of the Application Title.
-	Could just as well have been implemented in MainMenu, but I choose not to. 
-*/
+/**
+ * @author Felix Bärring <felixbarring@gmail.com>
+ *
+ */
 
 public class Title {
   

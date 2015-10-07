@@ -1,9 +1,6 @@
 /*
 * The MIT License
 *
-* Copyright 2014 Gustaf Ringius <Gustaf@linux.com>, Felix Bärring <felixbarring@gmail.com>
-* Andreas Löfman <lofman.andreas@gmail.com>,  Robert Wennergren <whoisregor@gmail.com>
-*
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
 * in the Software without restriction, including without limitation the rights
@@ -38,12 +35,8 @@ import util.IDrawable;
 /**
  *
  * @author Robert Wennergren <whoisregor@gmail.com>
- * @revision Andreas Löfman <lofman.andreas@gmail.com> 2014-04-16
- *                  fixed spawn method
- * @revision Gustaf Ringius <Gustaf@linux.com> 2014-05-15 Made nodes
- * comparable to be able to use with a priority Queue in my Dijkstra implementation
- * of the shortest Path Algorithm. Also fixed so we program against interfaces and
- * return List<type> and not implementation specific lists like ArrayList<type>
+ * @author Andreas Löfman <lofman.andreas@gmail.com>
+ * @author Gustaf Ringius <Gustaf@linux.com>
  */
 public class Node implements INode, Comparable<INode>{
     
@@ -106,10 +99,10 @@ public class Node implements INode, Comparable<INode>{
         xpos = x;
         ypos = y;
         Random r = new Random();
-        outgoing = new <Lane>ArrayList(3);
-        incoming = new <Lane>ArrayList(3);
-        connectedNodes = new <Node>ArrayList(3);
-        connectedNodesCopy = new <Node>ArrayList(3);
+        outgoing = new ArrayList<Lane>(3);
+        incoming = new ArrayList<Lane>(3);
+        connectedNodes = new ArrayList<INode>(3);
+        connectedNodesCopy = new ArrayList<INode>(3);
         sortedIn = new Lane[4];
         sortedOut = new Lane[4];
         activateTrafficLights = false;

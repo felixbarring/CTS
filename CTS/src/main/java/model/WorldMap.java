@@ -1,9 +1,6 @@
 /*
 * The MIT License
 *
-* Copyright 2014 Gustaf Ringius <Gustaf@linux.com>, Felix Bärring <felixbarring@gmail.com>
-* Andreas Löfman <lofman.andreas@gmail.com>,  Robert Wennergren <whoisregor@gmail.com>
-*
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
 * in the Software without restriction, including without limitation the rights
@@ -39,24 +36,7 @@ import util.Weather;
  * Central hub of the model. Will handle all communication within the model. 
  *
  * @author Andreas Löfman <lofman.andreas@gmail.com>
- * @revision Gustaf Ringius <Gustaf@linux.com> 2014-04-01 Added singleton
- * pattern and factory method.
- * @revision Gustaf Ringius <Gustaf@linux.com> 2014-04-03 Added getGraphics()
- * method.
- * @revision Gustaf Ringius <Gustaf@linux.com> 2014-04-08 Added thread safety
- * and synchronization to the shared resources.
- * @revision Gustaf Ringius <Gustaf@linux.com> 2014-04-28 Fixed singleton again,
- * changed to diamond on ArrayList definition. Fixed so we program against
- * Interface and not concrete classes (INode). First attempt to add a destroyMap
- * method.
- * @revision Gustaf Ringius <Gustaf@linux.com> 2014-05-15 fixed so we program
- * against interfaces and return List<type> and not implementation specific lists like
- * ArrayList<type> for example.
- * @revision Gustaf Ringius <Gustaf@linux.com> 2014-05-15 removed all the
- * representation exposure and merges in my Dijkstra class here. Since there are
- * only two methods I do not see the need to make an additional inner class. I made
- * my calculations private and then made a findRoute method.
- * 
+ * @author Gustaf Ringius <Gustaf@linux.com>
  * @invariant 0 <= spawnCooldownCounter < 
  */
 public class WorldMap implements IWorldMap {

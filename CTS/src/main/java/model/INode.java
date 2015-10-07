@@ -1,9 +1,6 @@
 /*
  * The MIT License
  *
- * Copyright 2014 Gustaf Ringius <Gustaf@linux.com>, Felix Bärring <felixbarring@gmail.com>
- * Andreas Löfman <lofman.andreas@gmail.com>,  Robert Wennergren <whoisregor@gmail.com>
- *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -34,17 +31,30 @@ import util.IDrawable;
  */
 public interface INode {
     
-    public double getXpos();
-    public double getYpos();
-    public boolean spawn(Vehicle e);
-    public boolean think();
-    public List<INode> getNodes();  
-    public void setYellowLight();
-    public void removeYellowLight();
-    public IDrawable getGraphics();
-    public double getMinDistance();
-    public void setMinDistance(double d);
-    public INode getPrevious();
-    public void setPrevious(INode n);
-    public List<Lane> getOutgoingLanes();
+    double getXpos();
+    
+    double getYpos();
+    
+    boolean spawn(Vehicle e);
+    
+    boolean think();
+    
+    List<INode> getNodes();  
+    
+    void setYellowLight();
+    
+    void removeYellowLight();
+    
+    IDrawable getGraphics();
+    
+    double getMinDistance();
+    
+    void setMinDistance(double d);
+    
+    INode getPrevious();
+    
+    void setPrevious(INode n);
+    
+    List<Lane> getOutgoingLanes();
+    
 }

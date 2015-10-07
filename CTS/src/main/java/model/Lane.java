@@ -1,9 +1,6 @@
 /*
 * The MIT License
 *
-* Copyright 2014 Gustaf Ringius <Gustaf@linux.com>, Felix Bärring <felixbarring@gmail.com>
-* Andreas Löfman <lofman.andreas@gmail.com>,  Robert Wennergren <whoisregor@gmail.com>
-*
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
 * in the Software without restriction, including without limitation the rights
@@ -32,8 +29,6 @@ import util.IDrawable;
 /**
  * A Class representing a driving lane in the map.
  * @author Andreas Löfman <lofman.andreas@gmail.com>
- * @revision Andreas Löfman <lofman.andreas@gmail.com> 2014-04-29
- *              Added a getGraphics() method
 */
 public class Lane {
     private double startX=0.0, startY=0.0, endX=0.0, endY=0.0;

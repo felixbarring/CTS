@@ -1,9 +1,6 @@
 /*
  * The MIT License
  *
- * Copyright 2014 Gustaf Ringius <Gustaf@linux.com>, Felix Bärring <felixbarring@gmail.com>
- * Andreas Löfman <lofman.andreas@gmail.com>,  Robert Wennergren <whoisregor@gmail.com>
- *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -27,10 +24,9 @@ package model.path;
 
 /**
  * A list of nodes representing a path.
- * @author Andreas
+ * @author Andreas Löfman <lofman.andreas@gmail.com>
+ * @author Gustaf Ringius <Gustaf@linux.com>
  * @param <N>
- * @revision Gustaf Ringius <Gustaf@linux.com> 2014-05-16
- *                      Added toString method to make testing easier.
  */
 public class Path<N> {
 	private PathItem<N> first;

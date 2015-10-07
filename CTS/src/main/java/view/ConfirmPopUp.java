@@ -2,8 +2,6 @@
 /*
  * The MIT License
  *
- * Copyright 2014 Gustaf Ringius <Gustaf@linux.com>.
- *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -34,7 +32,11 @@ package view;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.util.List;
-
+/**
+ * 
+ * @author Felix Bärring <felixbarring@gmail.com>
+ *
+ */
 public class ConfirmPopUp extends TargetMoveItem{
 
 	public final int WIDTH;

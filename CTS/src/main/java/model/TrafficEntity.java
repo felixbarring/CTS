@@ -1,9 +1,6 @@
 /*
 * The MIT License
 *
-* Copyright 2014 Gustaf Ringius <Gustaf@linux.com>, Felix Bärring <felixbarring@gmail.com>
-* Andreas Löfman <lofman.andreas@gmail.com>,  Robert Wennergren <whoisregor@gmail.com>
-*
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
 * in the Software without restriction, including without limitation the rights
@@ -55,8 +52,7 @@ import util.Weather;
  *
  *
  * @author Gustaf Ringius <Gustaf@linux.com>
- * @revision Andreas Löfman <lofman.andreas@gmail.com> 2014-04-07
- *                      Added move and think methods.
+ * @author Andreas Löfman <lofman.andreas@gmail.com>
  */
 public abstract class TrafficEntity {
     
